@@ -1,0 +1,29 @@
+{
+	"Routes": [
+		{
+			"DownstreamPathTemplate": "/api/Blog",
+			"DownstreamScheme": "https",
+			"DownstreamHostAndPorts": [
+				{
+					"Host": "localhost",
+					"Port": 44343
+				}
+			],
+			"UpstreamPathTemplate": "/Blog/"
+		},
+		{
+			"DownstreamPathTemplate": "/api/Blog/{url}",
+			"DownstreamScheme": "https",
+			"DownstreamHostAndPorts": [
+				{
+					"Host": "localhost",
+					"Port": 44343
+				}
+			],
+			"UpstreamPathTemplate": "/Blog/{url}"
+		}
+	],
+	"GlobalConfiguration": {
+		"BaseUrl": "https://loaclhost:44313"
+	}
+}
